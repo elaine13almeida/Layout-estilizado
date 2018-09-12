@@ -249,6 +249,16 @@ position: relative;
 
 /* Section com os botões de atalho para inscrição de empresas e jovens*/
 
+.bg-style {
+    width: 100vw;
+}
+
+.bg-style > img {
+    width: 100vw;
+    height: 95vh;
+    z-index: -1;
+    position: absolute;
+}
 .first-section {
     height: 40vh;
     width: 100vw;  
@@ -256,12 +266,13 @@ position: relative;
     align-items: center;
     flex-direction: row;
     justify-content: center;
-    background-color: white;
  
 }
 
 .bloco{
 background-color: white;
+position: relative;
+z-index: 1;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -281,6 +292,7 @@ background-color: white;
     transition: 0.4s ease-in;
    transform:  scale(1.04);
 }
+
 
 .bloco p {
     font-size: 1.3rem;
@@ -320,31 +332,49 @@ background-color: white;
 
 
 
-
 /* PORQUE A DEMODAY? */
+
+
 .sessao1{
     display: flex;
-    background-color: white;
     color: black;
-    height: 475px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 55vh;
     }
 
-.sessao1 > div{
+    #img-section {
+        margin-right: 178px;
+        
+    }
+
+    #img-section img {
+        background-size: cover;
+        height: 500px;
+        opacity: 0.8;
+        transition: 1s;
+
+    }
+
+    #img-section img:hover {
+        transition: 1s;
+        opacity: 1;
+        margin-right: 10px;
+    }
+.section-text {
     display: flex;
     margin-left: 178px;
     flex-direction: column;
 }  
 
 .sessao1 h2 {
-    font-size: 1.8rem;
+    font-size: 3rem;
     font-weight: bold;
     line-height: 30px;
     justify-content: flex-start;
-    color:  black;
+color: rgb(53, 225, 231);
     text-align: left;
     margin: 0 12px;
 
